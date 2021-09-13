@@ -1,0 +1,11 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --light-blue: #42b3e5;
+  --medium-blue: #0384ce;
+  --strong-blue: #3156a3;
+  --font-color: #888888;
+}
