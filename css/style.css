@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
-  color: #888888;
 }
 
 :root {
@@ -48,8 +47,11 @@ header .menu ul {
 header .menu a {
   padding: 16px;
   text-decoration: none;
+  color: #888888;
 }
 
-header .menu a:hover {
+header .menu a:hover,
+header .menu .active {
   background-color: #42b3e5;
+  color: white;
 }
