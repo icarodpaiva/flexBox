@@ -5,10 +5,16 @@
 }
 
 :root {
-  --light-blue: #42b3e5;
-  --medium-blue: #0384ce;
-  --strong-blue: #3156a3;
+  --light: #42b3e5;
+  --medium: #0384ce;
+  --strong: #3156a3;
   --font-color: #888888;
+}
+
+/* provisorio apenas para dar respiro a pag*/
+body {
+  margin-bottom: 300px;
+  background-color: antiquewhite;
 }
 
 .container {
@@ -43,19 +49,19 @@ header .menu ul {
 header .menu a {
   padding: 16px;
   text-decoration: none;
-  color: #888888;
+  color: var(--font-color);
 }
 
 header .menu a:hover,
 header .menu .active {
-  background-color: #42b3e5;
+  background-color: var(--light);
   color: white;
 }
 
 /* Área destinada a primeira Section */
 
 #intro {
- height: 670px;
+  height: 670px;
   display: flex;
   justify-content: center;
   background-image: url('../images/img1.jpg');
@@ -85,7 +91,7 @@ header .menu .active {
   letter-spacing: 2px;
 }
 
-.home_bar {
+.bar_change {
   display: flex;
   align-items: flex-end;
   color: white;
@@ -93,17 +99,85 @@ header .menu .active {
   line-height: 22px;
 }
 
-.home_bar_bold, .home_bar_light {
+.bar_change_bold,
+.bar_change_light {
   flex: 1;
   height: 1px;
   background-color: white;
 }
 
-.home_bar_bold {
+.bar_change_bold {
   height: 5px;
 }
 
+/* Área destinada aos banners da primeira Section */
+
 .banners {
   height: 210px;
-  background-color: aquamarine;
+  display: flex;
+  text-align: justify;
 }
+
+.banners a {
+  color: white;
+  text-decoration: none;
+}
+
+.banners_box1,
+.banners_box2,
+.banners_box3 {
+  flex: 1;
+  padding: 30px;
+  color: white;
+}
+
+.banners_box1 {
+  background-color: var(--light);
+}
+
+.banners_box2 {
+  background-color: var(--medium);
+}
+
+.banners_box3 {
+  background-color: var(--strong);
+}
+
+
+.banners_title, .banners_desc {
+  margin-bottom: 30px;
+}
+
+.banners_box3 .banners_title {
+  margin-bottom: 15px;
+}
+
+.banners_title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.banners_desc, .schedules {
+  font-size: 12px;
+}
+
+.banners_button {
+  display: inline-block;
+  padding: 10px;
+  border: 1px solid white;
+  font-size: 14px;
+}
+
+.banners_button:hover {
+  background-color: white;
+  color: black;
+}
+
+.schedules_container {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.295);
+}
+
+/* Área destinada a segunda Section */
