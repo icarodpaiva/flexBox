@@ -1,6 +1,8 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #888888;
 }
 
 :root {
@@ -8,4 +10,46 @@
   --medium-blue: #0384ce;
   --strong-blue: #3156a3;
   --font-color: #888888;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.container {
+  width: 990px;
+  display: flex;
+}
+
+header {
+  height: 120px;
+  align-items: center;
+}
+
+header .logo {
+  flex: 1;
+}
+
+header .menu {
+  flex: 2;
+}
+
+header .menu ul {
+  list-style: none;
+  justify-content: space-between;
+  text-transform: uppercase;
+}
+
+header .menu a {
+  padding: 16px;
+  text-decoration: none;
+}
+
+header .menu a:hover {
+  background-color: #42b3e5;
 }
