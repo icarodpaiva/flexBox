@@ -11,22 +11,17 @@
   --font-color: #888888;
 }
 
-.flex {
-  display: flex;
-  justify-content: center;
-}
-
-.column {
-  flex-direction: column;
-}
-
 .container {
   width: 990px;
   display: flex;
 }
 
+/* Área destinada ao Header */
+
 header {
   height: 120px;
+  display: flex;
+  justify-content: center;
   align-items: center;
 }
 
@@ -39,8 +34,9 @@ header .menu {
 }
 
 header .menu ul {
-  list-style: none;
+  display: flex;
   justify-content: space-between;
+  list-style: none;
   text-transform: uppercase;
 }
 
@@ -54,4 +50,60 @@ header .menu a:hover,
 header .menu .active {
   background-color: #42b3e5;
   color: white;
+}
+
+/* Área destinada a primeira Section */
+
+#intro {
+ height: 670px;
+  display: flex;
+  justify-content: center;
+  background-image: url('../images/img1.jpg');
+  background-size: cover;
+  object-position: center;
+}
+
+#intro .container {
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.home {
+  margin-top: 120px;
+  width: 360px;
+  color: white;
+  text-shadow: 0 1px 1px black;
+}
+
+.home_title {
+  margin-bottom: 30px;
+  font-size: 50px;
+}
+
+.home_description {
+  font-size: 18px;
+  letter-spacing: 2px;
+}
+
+.home_bar {
+  display: flex;
+  align-items: flex-end;
+  color: white;
+  font-size: 12px;
+  line-height: 22px;
+}
+
+.home_bar_bold, .home_bar_light {
+  flex: 1;
+  height: 1px;
+  background-color: white;
+}
+
+.home_bar_bold {
+  height: 5px;
+}
+
+.banners {
+  height: 210px;
+  background-color: aquamarine;
 }
