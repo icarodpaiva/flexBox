@@ -142,8 +142,8 @@ header .menu .active {
   background-color: var(--strong);
 }
 
-
-.banners_title, .banners_desc {
+.banners_title,
+.banners_desc {
   margin-bottom: 30px;
 }
 
@@ -156,7 +156,8 @@ header .menu .active {
   font-weight: bold;
 }
 
-.banners_desc, .schedules {
+.banners_desc,
+.schedules {
   font-size: 12px;
 }
 
@@ -187,7 +188,7 @@ header .menu .active {
   height: 1040px;
 }
 
-.news{
+.news {
   flex: 2;
 }
 
@@ -202,20 +203,14 @@ header .menu .active {
   background-color: var(--light);
 }
 
-
-.departments{
-  flex: 1;
-  background-color: rgb(255, 0, 0);
-}
-
-
 /* Área destinada as duas colunas da segunda Section */
 
 #main main {
   display: flex;
 }
 
-.column1, .column2 {
+.column1,
+.column2 {
   flex: 1;
   margin-right: 30px;
   text-align: justify;
@@ -233,7 +228,8 @@ header .menu .active {
   text-decoration: none;
 }
 
-.buttons_date, .buttons_comments {
+.buttons_date,
+.buttons_comments {
   color: white;
   padding: 10px;
 }
@@ -286,3 +282,96 @@ header .menu .active {
 .news_content_info a:hover {
   color: var(--strong);
 }
+
+/* Área destinada ao Aside da segunda Section*/
+
+.departments {
+  flex: 1;
+}
+
+.departments a {
+  text-decoration: none;
+}
+
+.departments_title {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.departments_bar {
+  width: 50px;
+  height: 2px;
+  background-color: var(--light);
+}
+
+.departments_content_buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px 0;
+  padding: 8px;
+  background-color: var(--strong);
+  color: white;
+  cursor: pointer;
+}
+
+.departments_content_buttons {
+  text-decoration: none;
+}
+
+.buttons_bar {
+  width: 13px;
+  height: 1px;
+  background-color: white;
+}
+
+.departments_demo {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  text-align: justify;
+  color: var(--font-color);
+}
+
+.departments_demo_text {
+  margin-left: 20px;
+}
+
+.departments_content_buttons2 {
+  display: flex;
+  justify-content: flex-end;
+  margin: 30px 0;
+  font-size: 12px;
+}
+
+.departments_content_buttons2 div {
+  padding: 8px;
+  background-color: var(--strong);
+  color: white;
+  margin-left: 2px;
+}
+
+.departments_content_buttons2 div:hover {
+  background-color: var(--light);
+}
+
+.departments_content_buttons3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 11px;
+  border-bottom: 1px solid #8888883b;
+  color: var(--font-color);
+  cursor: pointer;
+}
+
+.departments_content_buttons3 .buttons_bar {
+  background-color: var(--strong);
+  height: 1px;
+}
+
+.departments_content_buttons3:hover {
+  color: var(--strong);
+}
+
+/* Área destinada ao menu de contatos dentro do Aside */
