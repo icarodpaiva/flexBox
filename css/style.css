@@ -185,7 +185,6 @@ header .menu .active {
 #main {
   display: flex;
   justify-content: center;
-  height: 1040px;
 }
 
 .news {
@@ -281,6 +280,19 @@ header .menu .active {
 
 .news_content_info a:hover {
   color: var(--strong);
+}
+
+.show_all a {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 30px;
+  font-size: 14px;
+  color: var(--strong);
+  text-decoration: none;
+}
+
+.show_all a:hover {
+  text-decoration: underline;
 }
 
 /* Área destinada ao Aside da segunda Section*/
@@ -416,4 +428,23 @@ header .menu .active {
 
 .aside_contact address a:hover {
   text-decoration: underline;
+}
+
+/* Área destinada ao Footer */
+
+footer {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  background-color: black;
+}
+
+footer .banners {
+  flex: 1;
+  height: auto;
+}
+
+footer .banners_box1, footer .banners_box2, footer .banners_box3 {
+  padding: 20px;
+  padding-bottom: 0;
 }
