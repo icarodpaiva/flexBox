@@ -375,3 +375,45 @@ header .menu .active {
 }
 
 /* Área destinada ao menu de contatos dentro do Aside */
+
+.aside_contact {
+  margin-top: 50px;
+  border-bottom:1px solid #8888883b;
+}
+
+.aside_contact_text {
+  margin: 30px 0;
+  font-size: 14px;
+  color: var(--font-color);
+}
+
+.aside_contact address {
+  font-size: 14px;
+  color: var(--font-color);
+  font-style: normal;
+}
+
+.aside_contact_contact {
+  padding: 8px;
+  border-top: 1px solid #8888883b;
+}
+
+.aside_contact_contact span {
+  display: inline-block;
+  width: 19.7px;
+  height: 19.7px;
+  padding: 10px;
+  text-align: center;
+}
+
+.aside_contact address strong {
+  color: black;
+}
+
+.aside_contact address a {
+  color: var(--strong);
+}
+
+.aside_contact address a:hover {
+  text-decoration: underline;
+}
