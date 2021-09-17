@@ -577,3 +577,14 @@ footer .banners_desc a:hover {
 .footer_footer a:hover {
   text-decoration: underline;
 }
+
+#meus_contatos {
+  margin-top: -0.4rem;
+  padding: 1rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+#meus_contatos img {
+  margin-bottom: -0.25rem;
+}
